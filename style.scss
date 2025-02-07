@@ -1419,35 +1419,7 @@ body {
   animation-play-state: paused !important;
 }
 
-.christmasMessage {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  position: absolute;
-  animation: glow 1.5s ease-in-out infinite alternate,
-    move 2s ease-in-out infinite;
-
-  // &::before {
-  //   position: absolute;
-  //   top: -40px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   font-size: 5rem;
-  //   animation: swing 2s ease-in-out infinite;
-  // }
-
-  // &::after {
-  //   position: absolute;
-  //   bottom: -40px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   font-size: 5rem;
-  //   animation: swing 2s ease-in-out infinite reverse;
-  // }
-  @keyframes glow {
+@keyframes glow {
     0% {
       color: #fff;
       text-shadow: 0 0 10px #fff, 0 0 20px #ff5e5e, 0 0 30px #ff5e5e;
@@ -1481,45 +1453,6 @@ body {
       transform: translateX(-50%) rotate(-10deg);
     }
   }
-}
-
-.snowflake {
-  position: absolute;
-  top: 0;
-  font-size: 2rem; /* Adjust size as needed */
-  color: #fff;
-  text-align: center;
-  animation: fall 10s linear infinite, glow 1.5s ease-in-out infinite alternate;
-}
-
-/* Glowing effect for snowflakes */
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #ff5e5e, 0 0 30px #ff5e5e;
-  }
-  100% {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff5e5e, 0 0 40px #ff5e5e;
-  }
-}
-
-/* Falling effect for snowflakes */
-@keyframes fall {
-  0% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(100vh); /* Adjust the distance for the fall */
-  }
-}
-
-.christmasMessage p {
-  font-family: "Cookie", cursive; /* Apply the Great Vibes font */
-  font-size: 3rem;
-  color: #cc231e; /* A cheerful red color */
-  text-align: center;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for contrast */
-  letter-spacing: 3px; /* Slightly increase letter spacing for elegance */
-  animation: fadeInText 2s ease-out; /* Optional fade-in animation */
 }
 
 @keyframes fadeInText {
