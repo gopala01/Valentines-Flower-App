@@ -1420,38 +1420,37 @@ body {
 }
 
 @keyframes glow {
-    0% {
-      color: #fff;
-      text-shadow: 0 0 10px #fff, 0 0 20px #ff5e5e, 0 0 30px #ff5e5e;
-    }
-    100% {
-      color: #ff5e5e;
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff5e5e, 0 0 40px #ff5e5e;
-    }
+  0% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff5e5e, 0 0 30px #ff5e5e;
   }
-
-  @keyframes move {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+  100% {
+    color: #ff5e5e;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff5e5e, 0 0 40px #ff5e5e;
   }
+}
 
-  @keyframes swing {
-    0% {
-      transform: translateX(-50%) rotate(-10deg);
-    }
-    50% {
-      transform: translateX(-50%) rotate(10deg);
-    }
-    100% {
-      transform: translateX(-50%) rotate(-10deg);
-    }
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: translateX(-50%) rotate(-10deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(10deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(-10deg);
   }
 }
 
